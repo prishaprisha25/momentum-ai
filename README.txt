@@ -1,318 +1,248 @@
-# Welcome to your Rork app
 
-## Project info
+   ⭐ MomentumAI — Cognitive Memory Engine
 
-This is a native cross-platform mobile app created with [Rork](https://rork.com)
+A next-generation AI-powered thought companion that captures, analyzes, scores, and resurfaces your ideas.
 
-**Platform**: Native iOS & Android app, exportable to web
-**Framework**: Expo Router + React Native
+🚀 Overview
 
-## How can I edit this code?
+MomentumAI helps you remember, organize, and grow your ideas using intelligent AI processing.
+Most people capture ideas and forget them — MomentumAI makes sure your best thoughts come back when you need them.
 
-There are several ways of editing your native mobile application.
+🔥 Key Features
 
-### **Use Rork**
+AI-Powered Note Analysis
+Automatically generates:
 
-Simply visit [rork.com](https://rork.com) and prompt to build your app with AI.
+Summary
 
-Changes made via Rork will be committed automatically to this GitHub repo.
+Category
 
-Whenever you make a change in your local code editor and push it to GitHub, it will be also reflected in Rork.
+Keywords
 
-### **Use your preferred code editor**
+AI reasoning
 
-If you want to work locally using your own code editor, you can clone this repo and push changes. Pushed changes will also be reflected in Rork.
+Recommended action
 
-If you are new to coding and unsure which editor to use, we recommend Cursor. If you're familiar with terminals, try Claude Code.
+Momentum Scoring Engine
+Every note gets a score based on:
 
-The only requirement is having Node.js & Bun installed - [install Node.js with nvm](https://github.com/nvm-sh/nvm) and [install Bun](https://bun.sh/docs/installation)
+Importance
 
-Follow these steps:
+Actionability
 
-```bash
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Novelty
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Smart Resurfacing System
+Forgotten ideas reappear when:
 
-# Step 3: Install the necessary dependencies.
-bun i
+48+ hours have passed
 
-# Step 4: Start the instant web preview of your Rork app in your browser, with auto-reloading of your changes
-bun run start-web
+Score is high
 
-# Step 5: Start iOS preview
-# Option A (recommended):
-bun run start  # then press "i" in the terminal to open iOS Simulator
-# Option B (if supported by your environment):
-bun run start -- --ios
-```
+You haven't interacted recently
 
-### **Edit a file directly in GitHub**
+Beautiful, Modern UI
+Inspired by Notion + Apple design principles:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Smooth animations
 
-## What technologies are used for this project?
+Glassmorphism
 
-This project is built with the most popular native mobile cross-platform technical stack:
+Minimalistic screens
 
-- **React Native** - Cross-platform native mobile development framework created by Meta and used for Instagram, Airbnb, and lots of top apps in the App Store
-- **Expo** - Extension of React Native + platform used by Discord, Shopify, Coinbase, Telsa, Starlink, Eightsleep, and more
-- **Expo Router** - File-based routing system for React Native with support for web, server functions and SSR
-- **TypeScript** - Type-safe JavaScript
-- **React Query** - Server state management
-- **Lucide React Native** - Beautiful icons
+Bottom navigation
 
-## How can I test my app?
+Local & Private
+All data is stored on-device (no cloud required).
 
-### **On your phone (Recommended)**
+📱 Screens & UX Flow
+1. Splash + Onboarding
 
-1. **iOS**: Download the [Rork app from the App Store](https://apps.apple.com/app/rork) or [Expo Go](https://apps.apple.com/app/expo-go/id982107779)
-2. **Android**: Download the [Expo Go app from Google Play](https://play.google.com/store/apps/details?id=host.exp.exponent)
-3. Run `bun run start` and scan the QR code from your development server
+Animated logo
 
-### **In your browser**
+Intro slides to explain features
 
-Run `bun start-web` to test in a web browser. Note: The browser preview is great for quick testing, but some native features may not be available.
+2. Home Dashboard
 
-### **iOS Simulator / Android Emulator**
+Shows:
 
-You can test Rork apps in Expo Go or Rork iOS app. You don't need XCode or Android Studio for most features.
+Today’s insights
 
-**When do you need Custom Development Builds?**
+Recent notes
 
-- Native authentication (Face ID, Touch ID, Apple Sign In)
-- In-app purchases and subscriptions
-- Push notifications
-- Custom native modules
+Weekly activity graph
 
-Learn more: [Expo Custom Development Builds Guide](https://docs.expo.dev/develop/development-builds/introduction/)
+High-momentum ideas
 
-If you have XCode (iOS) or Android Studio installed:
+AI suggestions
 
-```bash
-# iOS Simulator
-bun run start -- --ios
+Resurfaced (Forgotten Gold) ideas
 
-# Android Emulator
-bun run start -- --android
-```
+3. Add Note
 
-## How can I deploy this project?
+Rich text input
 
-### **Publish to App Store (iOS)**
+Smart prompts for inspiration
 
-1. **Install EAS CLI**:
+"Save & Analyze" → triggers AI pipeline
 
-   ```bash
-   bun i -g @expo/eas-cli
-   ```
+4. Insights List
 
-2. **Configure your project**:
+All insights
 
-   ```bash
-   eas build:configure
-   ```
+Search
 
-3. **Build for iOS**:
+Sort (recent/momentum/category)
 
-   ```bash
-   eas build --platform ios
-   ```
+Filter by category
 
-4. **Submit to App Store**:
-   ```bash
-   eas submit --platform ios
-   ```
+5. Insight Detail
 
-For detailed instructions, visit [Expo's App Store deployment guide](https://docs.expo.dev/submit/ios/).
+Summary
 
-### **Publish to Google Play (Android)**
+Full text
 
-1. **Build for Android**:
+Keywords
 
-   ```bash
-   eas build --platform android
-   ```
+AI reasoning
 
-2. **Submit to Google Play**:
-   ```bash
-   eas submit --platform android
-   ```
+Momentum bar
 
-For detailed instructions, visit [Expo's Google Play deployment guide](https://docs.expo.dev/submit/android/).
+Recommended action
 
-### **Publish as a Website**
+Favorite, share, delete
 
-Your React Native app can also run on the web:
+6. Resurfaced Ideas
 
-1. **Build for web**:
+Notes resurfaced by the cognitive engine
 
-   ```bash
-   eas build --platform web
-   ```
+"Revive this idea" CTA
 
-2. **Deploy with EAS Hosting**:
-   ```bash
-   eas hosting:configure
-   eas hosting:deploy
-   ```
+7. Settings
 
-Alternative web deployment options:
+Export notes
 
-- **Vercel**: Deploy directly from your GitHub repository
-- **Netlify**: Connect your GitHub repo to Netlify for automatic deployments
+Clear data
 
-## App Features
+Reset onboarding
 
-This template includes:
+App info & analytics
 
-- **Cross-platform compatibility** - Works on iOS, Android, and Web
-- **File-based routing** with Expo Router
-- **Tab navigation** with customizable tabs
-- **Modal screens** for overlays and dialogs
-- **TypeScript support** for better development experience
-- **Async storage** for local data persistence
-- **Vector icons** with Lucide React Native
+🧠 AI Pipelines
+1. Note Analysis
 
-## Project Structure
+AI processes the text and returns:
 
-```
-├── app/                    # App screens (Expo Router)
-│   ├── (tabs)/            # Tab navigation screens
-│   │   ├── _layout.tsx    # Tab layout configuration
-│   │   └── index.tsx      # Home tab screen
-│   ├── _layout.tsx        # Root layout
-│   ├── modal.tsx          # Modal screen example
-│   └── +not-found.tsx     # 404 screen
-├── assets/                # Static assets
-│   └── images/           # App icons and images
-├── constants/            # App constants and configuration
-├── app.json             # Expo configuration
-├── package.json         # Dependencies and scripts
-└── tsconfig.json        # TypeScript configuration
-```
+{
+  "category": "",
+  "summary": "",
+  "keywords": [],
+  "reason": ""
+}
+2. Momentum Engine
 
-## Custom Development Builds
+Analyzes:
 
-For advanced native features, you'll need to create a Custom Development Build instead of using Expo Go.
+urgency
 
-### **When do you need a Custom Development Build?**
+action verbs
 
-- **Native Authentication**: Face ID, Touch ID, Apple Sign In, Google Sign In
-- **In-App Purchases**: App Store and Google Play subscriptions
-- **Advanced Native Features**: Third-party SDKs, platform-specifc features (e.g. Widgets on iOS)
-- **Background Processing**: Background tasks, location tracking
+novelty
 
-### **Creating a Custom Development Build**
+complexity
 
-```bash
-# Install EAS CLI
-bun i -g @expo/eas-cli
+Returns:
 
-# Configure your project for development builds
-eas build:configure
+{
+  "momentumScore": 0-10,
+  "scoreReason": "",
+  "importance": 0-5,
+  "actionability": 0-5,
+  "novelty": 0-5,
+  "recommendedAction": ""
+}
+3. Resurfacing Engine
 
-# Create a development build for your device
-eas build --profile development --platform ios
-eas build --profile development --platform android
+A note resurfaces if:
 
-# Install the development build on your device and start developing
-bun start --dev-client
-```
+Age > 48 hours
 
-**Learn more:**
+High momentum
 
-- [Development Builds Introduction](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Creating Development Builds](https://docs.expo.dev/develop/development-builds/create-a-build/)
-- [Installing Development Builds](https://docs.expo.dev/develop/development-builds/installation/)
+Not interacted recently
 
-## Advanced Features
+🛠️ Tech Stack
+Frontend
 
-### **Add a Database**
+React Native
 
-Integrate with backend services:
+Expo
 
-- **Supabase** - PostgreSQL database with real-time features
-- **Firebase** - Google's mobile development platform
-- **Custom API** - Connect to your own backend
+Expo Router
 
-### **Add Authentication**
+React Query
 
-Implement user authentication:
+Animated API
 
-**Basic Authentication (works in Expo Go):**
+Lucide Icons
 
-- **Expo AuthSession** - OAuth providers (Google, Facebook, Apple) - [Guide](https://docs.expo.dev/guides/authentication/)
-- **Supabase Auth** - Email/password and social login - [Integration Guide](https://supabase.com/docs/guides/getting-started/tutorials/with-expo-react-native)
-- **Firebase Auth** - Comprehensive authentication solution - [Setup Guide](https://docs.expo.dev/guides/using-firebase/)
+AI
 
-**Native Authentication (requires Custom Development Build):**
+LLM prompts (via backend or client)
 
-- **Apple Sign In** - Native Apple authentication - [Implementation Guide](https://docs.expo.dev/versions/latest/sdk/apple-authentication/)
-- **Google Sign In** - Native Google authentication - [Setup Guide](https://docs.expo.dev/guides/google-authentication/)
+Deterministic JSON parsing
 
-### **Add Push Notifications**
+Backend (if used)
 
-Send notifications to your users:
+Node.js / Express OR FastAPI
 
-- **Expo Notifications** - Cross-platform push notifications
-- **Firebase Cloud Messaging** - Advanced notification features
+SQLite / MongoDB
 
-### **Add Payments**
+REST API for:
 
-Monetize your app:
+/add_note
 
-**Web & Credit Card Payments (works in Expo Go):**
+/notes
 
-- **Stripe** - Credit card payments and subscriptions - [Expo + Stripe Guide](https://docs.expo.dev/guides/using-stripe/)
-- **PayPal** - PayPal payments integration - [Setup Guide](https://developer.paypal.com/docs/checkout/mobile/react-native/)
+/analytics
 
-**Native In-App Purchases (requires Custom Development Build):**
+/resurface
 
-- **RevenueCat** - Cross-platform in-app purchases and subscriptions - [Expo Integration Guide](https://www.revenuecat.com/docs/expo)
-- **Expo In-App Purchases** - Direct App Store/Google Play integration - [Implementation Guide](https://docs.expo.dev/versions/latest/sdk/in-app-purchases/)
+📊 Analytics Included
 
-**Paywall Optimization:**
+Total notes
 
-- **Superwall** - Paywall A/B testing and optimization - [React Native SDK](https://docs.superwall.com/docs/react-native)
-- **Adapty** - Mobile subscription analytics and paywalls - [Expo Integration](https://docs.adapty.io/docs/expo)
+Today’s notes
 
-## I want to use a custom domain - is that possible?
+Weekly trends
 
-For web deployments, you can use custom domains with:
+Average momentum
 
-- **EAS Hosting** - Custom domains available on paid plans
-- **Netlify** - Free custom domain support
-- **Vercel** - Custom domains with automatic SSL
+Top categories
 
-For mobile apps, you'll configure your app's deep linking scheme in `app.json`.
+Streak count
 
-## Troubleshooting
+📂 Project Structure (Example)
+app/
+  tabs/
+    home/
+    insights/
+    resurface/
+    add/
+  insight/
+  settings/
 
-### **App not loading on device?**
+components/
+  NoteCard.tsx
+  SuggestionCard.tsx
+  EmptyState.tsx
+  MomentumBar.tsx
 
-1. Make sure your phone and computer are on the same WiFi network
-2. Try using tunnel mode: `bun start -- --tunnel`
-3. Check if your firewall is blocking the connection
+types/
+  index.ts
 
-### **Build failing?**
-
-1. Clear your cache: `bunx expo start --clear`
-2. Delete `node_modules` and reinstall: `rm -rf node_modules && bun install`
-3. Check [Expo's troubleshooting guide](https://docs.expo.dev/troubleshooting/build-errors/)
-
-### **Need help with native features?**
-
-- Check [Expo's documentation](https://docs.expo.dev/) for native APIs
-- Browse [React Native's documentation](https://reactnative.dev/docs/getting-started) for core components
-- Visit [Rork's FAQ](https://rork.com/faq) for platform-specific questions
-
-## About Rork
-
-Rork builds fully native mobile apps using React Native and Expo - the same technology stack used by Discord, Shopify, Coinbase, Instagram, and nearly 30% of the top 100 apps on the App Store.
-
-Your Rork app is production-ready and can be published to both the App Store and Google Play Store. You can also export your app to run on the web, making it truly cross-platform.
+constants/
+  colors.ts
+📦 Installation (If running locally)
+npm install
+npx expo start
